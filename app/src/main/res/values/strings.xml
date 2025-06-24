@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Guide</string>
+    <string name="search">Что ищите ?</string>
+    <string name="base">Базы</string>
+    <string name="Sanatori">Санатории</string>
+    <string name="Hotel">Отели</string>
+    <string name="Search">Поиск</string>
+    <string name="WhereStay">Где остановится</string>
+    <string name="Most">Популярные места, на основании нашей статистики.</string>
+    <string name="Settings">Настройки</string>
+    <string name="Todo">TODO</string>
 </resources>
