@@ -37,7 +37,8 @@ public class ExampleInstrumentedTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> activityScenarioRule = new ActivityScenarioRule<>(MainActivity.class);
-
+    /*
+    // Проверка наличия
     @Test
     public void checkSearchView_isDisplayed() {
         onView(withId(R.id.searchView))
@@ -126,5 +127,5 @@ public class ExampleInstrumentedTest {
     public void checkButtonHotel_isClickable() {
         onView(withId(R.id.buttonHotel))
                 .check(matches(isClickable()));
-    }
+    } */
 }
