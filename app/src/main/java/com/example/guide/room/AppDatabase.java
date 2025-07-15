@@ -10,7 +10,7 @@ import com.example.guide.bases.BaseDao;
 import com.example.guide.hotels.Hotel;
 import com.example.guide.hotels.HotelDao;
 
-@Database(entities = {Base.class, Hotel.class}, version = 2)
+@Database(entities = {Base.class, Hotel.class}, version = 4)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract BaseDao baseDao();
     public abstract HotelDao hotelDao();

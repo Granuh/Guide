@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -14,6 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textViewGid"
         android:text="@string/mobile_guide"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -24,6 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textViewResearch"
         android:text="@string/research"
         android:textSize="15sp"
         android:gravity="center"
@@ -32,6 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textViewGoogle"
         android:text="@string/google"
         android:textSize="24sp"
         android:layout_marginBottom="8dp"/>

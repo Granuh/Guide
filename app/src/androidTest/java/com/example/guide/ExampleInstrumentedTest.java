@@ -37,95 +37,81 @@ public class ExampleInstrumentedTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> activityScenarioRule = new ActivityScenarioRule<>(MainActivity.class);
-    /*
-    // Проверка наличия
-    @Test
-    public void checkSearchView_isDisplayed() {
-        onView(withId(R.id.searchView))
-                .check(matches(isDisplayed()));
-    }
 
     // Проверка наличия
     @Test
-    public void checkTextViewWhereStay_isDisplayed() {
-        onView(withId(R.id.tvWhereStay))
-                .check(matches(isDisplayed()));
-    }
-
-    // Проверка наличия
-    @Test
-    public void checkTextViewDescription_isDisplayed() {
-        onView(withId(R.id.tvDescription))
+    public void checkTextViewGid_isDisplayed() {
+        onView(withId(R.id.textViewGid))
                 .check(matches(isDisplayed()));
     }
 
     // Проверка отображает нужный текст
     @Test
-    public void checkTextViewWhereStay_hasCorrectText() {
-        onView(withId(R.id.tvWhereStay))
-                .check(matches(withText("Где остановится")));
+    public void checkTextViewGid_hasCorrectText() {
+        onView(withId(R.id.textViewGid))
+                .check(matches(withText("Мобильный гид по Алтайскому краю")));
+    }
+
+    // Проверка невидимости
+    @Test
+    public void checkTextViewGid_isGone() {
+        onView(withId(R.id.textViewGid))
+                .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)));
+    }
+
+    // Проверка наличия
+    @Test
+    public void checkTextViewResearch_isDisplayed() {
+        onView(withId(R.id.textViewResearch))
+                .check(matches(isDisplayed()));
     }
 
     // Проверка отображает нужный текст
     @Test
-    public void checkTextViewDescription_hasCorrectText() {
-        onView(withId(R.id.tvDescription))
-                .check(matches(withText("Популярные места, на основании нашей статистики.")));
+    public void checkTextViewResearch_hasCorrectText() {
+        onView(withId(R.id.textViewResearch))
+                .check(matches(withText("Исследуйте достопримечательности Алтайского края")));
     }
 
     // Проверка невидимости
     @Test
-    public void checkTextViewWhereStay_isGone() {
-        onView(withId(R.id.tvWhereStay))
+    public void checkTextViewResearch_isGone() {
+        onView(withId(R.id.textViewResearch))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)));
+    }
+
+    // Проверка наличия
+    @Test
+    public void checkTextViewGoogle_isDisplayed() {
+        onView(withId(R.id.textViewGoogle))
+                .check(matches(isDisplayed()));
+    }
+
+    // Проверка отображает нужный текст
+    @Test
+    public void checkTextViewGoogle_hasCorrectText() {
+        onView(withId(R.id.textViewGoogle))
+                .check(matches(withText("Войдите через Google")));
     }
 
     // Проверка невидимости
     @Test
-    public void checkTextViewDescription_isGone() {
-        onView(withId(R.id.tvDescription))
+    public void checkTextViewGoogle_isGone() {
+        onView(withId(R.id.textViewGoogle))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)));
     }
 
     // Проверка текста кнопки
     @Test
-    public void checkButtonBase_hasCorrectText() {
-        onView(withId(R.id.buttonBase))
-                .check(matches(withText("Базы")));
+    public void checkSignInButton_hasCorrectText() {
+        onView(withId(R.id.signInButton))
+                .check(matches(withText("Войти через Google")));
     }
 
     // Проверка кликабельна кнопка
     @Test
-    public void checkButtonBase_isClickable() {
-        onView(withId(R.id.buttonBase))
+    public void checkSignInButton_isClickable() {
+        onView(withId(R.id.signInButton))
                 .check(matches(isClickable()));
     }
-
-    // Проверка текста кнопки
-    @Test
-    public void checkButtonSanatori_hasCorrectText() {
-        onView(withId(R.id.buttonSanatori))
-                .check(matches(withText("Санатории")));
-    }
-
-    // Проверка кликабельна кнопка
-    @Test
-    public void checkButtonSanatori_isClickable() {
-        onView(withId(R.id.buttonSanatori))
-                .check(matches(isClickable()));
-    }
-
-    // Проверка текста кнопки
-    @Test
-    public void checkButtonHotel_hasCorrectText() {
-        onView(withId(R.id.buttonHotel))
-                .check(matches(withText("Отели")));
-    }
-
-    // Проверка кликабельна кнопка
-    @Test
-    public void checkButtonHotel_isClickable() {
-        onView(withId(R.id.buttonHotel))
-                .check(matches(isClickable()));
-    } */
 }
